@@ -1,6 +1,7 @@
 package models;
 
-import java.security.Timestamp;
+
+import java.sql.Timestamp;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -46,8 +47,8 @@ public class Task {
         return created_at;
     }
 
-    public void setCreated_at(Timestamp created_at) {
-        this.created_at = created_at;
+    public void setCreated_at(Timestamp currentTime) {
+        this.created_at = currentTime;
     }
 
     public Timestamp getUpdated_at() {
@@ -66,4 +67,7 @@ public class Task {
         this.content = content;
     }
 
-}
+
+    }
+
+
